@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+.navbar{
+  width:600px;
+  margin:0 auto;
+}
+.item{
+  color:#000;
+  margin:0;
+  padding:0;
+  background-color:#ddd;
+  list-style:none;
+  position:relative;
+  box-shadow:0 2px 4px 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.16);
+}
+.item:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.item li a{
+  display:block;
+  padding:10px 20px;
+  text-decoration:none;
+  color:#333;
+}
+
+.item li a:hover{
+  color:#000;
+  background-color:#ccc;
+}
+.item>li{
+  float:left;
+}
+.item .lititem{
+  color:#000;
+  background-color:#fff;
+  display:none;
+  position:absolute;
+  
+}
+.item>li:hover .lititem{
+   display:block;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <ul class="item">
+  <li><a href="#">首页</a></li>
+  <li><a href="#">作品</a></li>
+  <li><a href="#">更多</a><div class="lititem">
+    <a href="#">GitHub</a>
+    <a href="#">博客</a>
+    <a href="#">知乎</a>
+  </div>
+    </li>
+  </ul>
+</div>
+</div>
+</body>
+</html>
